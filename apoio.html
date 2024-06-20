@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+        <li><b>Avante <br>Mulheres</b></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="infograficos.html">Infográficos</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="apoio.html">Apoio</a></li>
+        <li><a href="podcast.html">Podcasts</a></li>
+        <li><a href="literatura.html">Literatura</a></li>
+        <li><a href="index.html">Sair</a></li>
+        <li class="botao">
+            <div class="ball"></div>
+        </li>
+      </ul>
+</div>
+<div class="margem"></div>
+<div class="h1"><h1>Apoio</h1></div>
+<div class="container1">
+    <div class="foto1">
+    </div>
+    <div class="caixa1">
+        <h2>Justiceiras</h2>
+        <h5><b>SEJA VOLUNTÁRIA NESSE PROJETO PRÓ-MULHER</b><br>
+            O Projeto “Justiceiras” visa suprir a necessidade de canais e sistemas alternativos para combater e prevenir à violência de gênero.<br><br>
+        <a href="https://justiceiras.org.br/"><b>Acessar</b></a></h5>
+    </div>
+</div>
+<div class="container2">
+    <div class="caixa2">
+         <h2>Instituto Filhas de Sara</h2>
+        <h5>INSTITUTO FILHAS DE SARA é uma organização da Sociedade Civil que tem o objetivo de trabalhar em prol dos direitos de mulheres, principalmente, das que se encontram em situação de violência, visando o resgate da identidade de cada uma e o rompimento do ciclo de violência; apoiando também as famílias, para que essas mulheres vivam de modo digno e satisfatório.<br><br>
+        <a href="https://www.institutofilhasdesara.org/"><b>Acessar</b></a></h5>
+    </div>
+    <div class="foto2">
+    </div>
+</div>
+<div class="container3">
+    <div class="foto3">
+    </div>
+    <div class="caixa3">
+        <h2>#PARACADAUMA</h2>
+        <h5> Baseando-se na legislação vigente sobre o assunto – Lei Maria da Penha –, a campanha #ParaCadaUma pretende falar, tipificar e exemplificar todos os tipos de violência contra as mulheres. O objetivo é fazer com que cada uma das cinco violências (psicológica, moral, patrimonial, sexual e física) seja identificada e nomeada, abrindo espaço para o enfrentamento a cada uma delas.<br><br>
+        <a href="https://paracadauma.com.br/"><b>Acessar</b></a></h5>
+    </div>
+</div>
+<script>
+    document.querySelector('.ball').addEventListener('click', (e)=>{
+        e.target.classList.toggle('ball-move');
+        document.body.classList.toggle('dark');
+    })
+</script>
+
+
+<style>
+*{
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    transform: background 1s;
+    background-image: url(imagens/fun1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.h1{
+    margin-top: 100px;
+    margin: 25px;
+    font-size: large;
+    text-align: center;
+}
+h5{
+    font-size: medium;
+}
+
+a{
+    color: #ffffff;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+ul {
+    position: fixed;
+list-style-type: none;
+margin: 0;
+padding: 5px;
+overflow: hidden;
+background-color: #9775a8 ;
+width: 100%;
+}
+
+li {
+float: left;
+color: white;
+text-align: center;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 12px 14px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #7c628a;
+color: #fff;
+}
+
+.botao{
+margin: 15px;
+position: relative;
+width: 50px;
+height: 20px;
+border-radius: 25px;
+box-shadow: 0 0 2.5px 0 #473f6e ;
+cursor: pointer;
+background-color: #a36887 ;
+border: 34px;
+}
+.ball{
+position: absolute;
+top: 0;
+left: 0;
+width: 20px;
+height: 100%;
+border-radius: 50%;
+background-color: #fb815f;
+transition: left 1s;
+border: 2px #8832da;
+}
+.ball-move{
+left: calc(100% - 20px);
+}
+.dark{
+background-image: url(imagens/fun2.jpeg);
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+color: #fff;
+}
+
+.margem{
+padding: 32px;
+}
+
+.container1{
+    position:static;
+    width: 90%;
+    padding: 40px;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #a368872c 15%, #a3688742 30%, #a368879c 90%);
+   margin: 20px;
+   float: left;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    
+}
+.caixa1{
+    position: static;
+    width: 80%;
+    padding: 110px;
+    height: 70px;
+    float: right;
+    background-color: transparent;
+    margin: 1px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.foto1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+    background-image: url(imagens/apoio1.jpg);
+    position:static;
+    width: 60%;
+    padding: 110px;
+    height: 70px;
+    float: left;
+    margin: 1px;
+    border-radius: 20px;
+}
+
+.container2{
+    position:static;
+    width: 90%;
+    padding: 40px;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #a368872c 15%, #a3688742 30%, #a368879c 90%);
+   margin: 20px;
+   float: right;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    
+}
+.caixa2{
+    position: static;
+    width: 80%;
+    padding: 110px;
+    height: 70px;
+    float: right;
+    background-color: transparent;
+    margin: 1px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.foto2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+    background-image: url(imagens/apoio2.jpg);
+    position:static;
+    width: 60%;
+    padding: 110px;
+    height: 70px;
+    float: left;
+    margin: 1px;
+    border-radius: 20px;
+}
+
+.container3{
+    position:static;
+    width: 90%;
+    padding: 40px;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #a368872c 15%, #a3688742 30%, #a368879c 90%);
+   margin: 20px;
+   float: left;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    
+}
+.caixa3{
+    position: static;
+    width: 80%;
+    padding: 110px;
+    height: 70px;
+    float: right;
+    background-color: transparent;
+    margin: 1px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.foto3{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+    background-image: url(imagens/apoio3.png);
+    position:static;
+    width: 60%;
+    padding: 110px;
+    height: 70px;
+    float: left;
+    margin: 1px;
+    border-radius: 20px;
+}
+</style>
+</body>
+</html>
