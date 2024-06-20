@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <span>Avante Mulheres</span>
+                <header>Cadastre-se</header>
+            </div>
+
+            <form id="userForm">
+                <div class="input-field">
+                    <input type="email" class="input" placeholder="Email" id="email" required>
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input" placeholder="Senha" id="password" required>
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-field">
+                    <input type="submit" class="submit" value="Cadastrar">
+                </div>
+            </form>
+            <div id="Response"></div>
+
+            <div class="button">
+                <div class="left">
+                    <label><a href="index.html">Voltar</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        *{
+            font-family:'Poppins', sans-serif;
+        }
+        body{
+            background-image: url(imagens/fundo.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+        }
+        .container{
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            padding: 0 15px 0 15px;
+        }
+        .input-field .input{
+            height: 45px;
+            width: 87%;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            color: #fff;
+            padding: 0 0 0 42px;
+            background:rgba(255,255,255,0.1);
+        }
+        i{
+            position: relative;
+            top: -31px;
+            left: 17px;
+            color: #fff;
+        }
+        ::-webkit-input-placeholder{
+            color: #fff;
+        }
+        span{
+            color: #fff;
+            font-size: larger;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 15px 0;
+        }
+        header{
+            color: #fff;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            padding: 0 0 15px 0;
+        }
+        .input-field{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        .submit{
+            border:none;
+            border-radius: 30px;
+            font-size: 18px;
+            height: 45px;
+            outline: none;
+            width: 100%;
+            background: rgba(255,255,255,0.7);
+            cursor: pointer;
+            transition: .3s;
+        }
+        .submit:hover{
+            box-shadow: 1px 5px 7px 1px rgba(0,0,0,0.2);
+        }
+        .botton{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: small;
+            color: #fff;
+            margin-top: 10px;
+        }
+        .left{
+            display: flex;
+            justify-content: center;
+        }
+        label a{
+            color: #fff;
+            text-decoration: none;
+        }
+        label{
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+    
+    <script>
+        const apiUrl = 'https://jsonplaceholder.typicode.com/users';
+
+        document.getElementById('userForm').addEventListener('submit', async function(event){
+            event.preventDefault();
+
+            const formData = new FormData(this);
+            const userData = {
+                email: formData.get('email'),
+                password: formData.get('password'),
+            };
+
+            try {
+                const Response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(userData),
+                });
+                const data = await Response.json();
+                document.getElementById('Response').textContent = 'Usuario cadastrado';
+            } catch (error) {
+                console.error('Erro ao cadstrar usuário:', error);
+                document.getElementById('Response').textContent = 'Erro ao cadastrar usuario. Por favor, tente novamente';
+            }
+        });
+    </script>
+</body>
+</html>

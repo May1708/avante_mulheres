@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+        <li><b>Avante <br>Mulheres</b></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="infograficos.html">Infográficos</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="apoio.html">Apoio</a></li>
+        <li><a href="podcast.html">Podcasts</a></li>
+        <li><a href="literatura.html">Literatura</a></li>
+        <li><a href="index.html">Sair</a></li>
+        <li class="botao">
+            <div class="ball"></div>
+        </li>
+      </ul>
+</div>
+
+<div class="container1">
+    <div class="margem"></div>
+<div class="h1"><h1>Avante Mulheres</h1></div>
+    <div class="foto1">
+    </div>
+</div>
+<div class="ligue">
+    <div class="num">
+        <h2>Ligue 180</h2>
+        <h3>Com atendimento 24 horas, todos os dias da semana, o serviço 180 é gratuito, 
+            confidencial e funciona em todo o Brasil. Orienta mulheres sobre seus direitos, 
+            as leis aplicáveis ao seu caso e onde está a delegacia mais próxima.</h3>
+    </div>
+    <div class="num">
+        <h2>Ligue 190</h2>
+        <h3>Caso você esteja em situação de risco e violência, disque 190. É o telefone para acionar socorro imediato.</h3>
+    </div>
+</div>
+<div class="caixa1">
+    <h1>Sobre Nós</h1>
+    <h5>Somos umgrupo que visa proporcionar um ambiente seguro com suporte às mulheres que estão passando por momentos difíceis.
+        Discutimos sobre diversos assuntos relevantes, que proporcionam reflexão e troca de vivências. <br>
+        Temos o objetivo de ajudar mulheres a se encontrarem. Assim, acudindo em situações de vulnerabilidade e a traçar um 
+        caminho de autoconhecimento. <br>
+        Esse projeto é guiado para que haja uma nova oportunidade de viver um futuro melhor, com mais dignidade, autoconhecimento e autonomia 
+    </h5>
+</div>
+<script>
+    document.querySelector('.ball').addEventListener('click', (e)=>{
+        e.target.classList.toggle('ball-move');
+        document.body.classList.toggle('dark');
+    })
+</script>
+
+<style>
+
+*{
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    transform: background 1s;
+    background-image: url(imagens/fun1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.h1{
+    margin-top: 100px;
+    margin: 25px;
+    font-size: large;
+    text-align: center;
+}
+
+a{
+    color: #ffffff;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+ul {
+    position: fixed;
+list-style-type: none;
+margin: 0;
+padding: 5px;
+overflow: hidden;
+background-color: #9775a8 ;
+width: 100%;
+}
+
+li {
+float: left;
+color: white;
+text-align: center;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 12px 14px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #7c628a;
+color: #fff;
+}
+
+.botao{
+margin: 15px;
+position: relative;
+width: 50px;
+height: 20px;
+border-radius: 25px;
+box-shadow: 0 0 2.5px 0 #473f6e ;
+cursor: pointer;
+background-color: #a36887 ;
+border: 34px;
+}
+.ball{
+position: absolute;
+top: 0;
+left: 0;
+width: 20px;
+height: 100%;
+border-radius: 50%;
+background-color: #fb815f;
+transition: left 1s;
+border: 2px #8832da;
+}
+.ball-move{
+left: calc(100% - 20px);
+}
+.dark{
+background-image: url(imagens/fun2.jpeg);
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+color: #fff;
+}
+
+.margem{
+padding: 25px;
+}
+
+.container1{
+    position:static;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #181e692c 15%, #181e6942 30%, #181e699c 90%);
+   float: left;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    
+}
+.caixa1{
+    position: static;
+    width: 90%;
+    height: 70px;
+    float: none;
+    background-color: transparent;
+    margin: 1px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    margin-top: 70px;
+
+}
+
+.foto1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+    background-image: url(imagens/home.jpg);
+    position:static;
+    width: 70%;
+    height: 400px;
+    float: left;
+    margin: 1px;
+    border-radius: 20px;
+}
+
+.ligue{
+    position:static;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+   float: left;
+    margin-bottom: 50px;
+}
+
+.num{
+    position: static;
+    width: 45%;
+    height: 240px;
+    float: none;
+    background: linear-gradient(to top, #181e692c 15%, #181e6942 30%, #181e699c 90%);
+    margin: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 150px;
+}
+
+</style>
+</body>
+</html>

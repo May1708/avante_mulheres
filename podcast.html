@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+        <li><b>Avante <br>Mulheres</b></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="infograficos.html">Infográficos</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="apoio.html">Apoio</a></li>
+        <li><a href="podcast.html">Podcasts</a></li>
+        <li><a href="literatura.html">Literatura</a></li>
+        <li><a href="index.html">Sair</a></li>
+        <li class="botao">
+            <div class="ball"></div>
+        </li>
+      </ul>
+</div>
+<div class="margem"></div>
+<div class="h1"><h1>Podcasts</h1></div>
+<div class="container1">
+    <div class="foto1"></div>
+    <div class="caixa1">
+        <h2>Heroínas do Brasil</h2>
+        <h5>O podcast Heroínas do Brasil nasceu com o propósito de dar voz à trajetória de brasileiras que foram 
+            protagonistas em capítulos muito importantes da nossa História: independência, abolicionismo, direito da 
+            mulher à educação, ao voto, à escolha de uma profissão. <br>
+            Em foco, mulheres de fibra, ousadas, intensas, sonhadoras. Mulheres que com muita coragem e ousadia, 
+            sozinhas ou com pouco apoio, ajudaram a transformar a realidade ao seu redor. Algumas delas, pioneiras em áreas
+             exclusivamente masculinas. <br><br>
+             Acessar: &nbsp
+            <a href="https://tumpats.com.br/projeto/heroinas-do-brasil/"><b>Tumpats</b></a>&nbsp &nbsp &nbsp
+        <a href="https://open.spotify.com/episode/2zfrDKVpUrflbA7Y3LmZGe"><b>Spotify</b></a></h5>
+    </div>
+</div>
+<div class="container2">
+    <div class="caixa2">
+        <h2>Mulheres Positivas</h2>
+        <h5>Apresentado por Fabi Saad e Natalie Feller, o Mulheres Positivas é um podcast para empoderar mulheres por meio de 
+            casos de sucesso e debates sobre o mercado de trabalho pelo olhar e vivência da mulher. <br><br>
+             Acessar: &nbsp
+        <a href="https://open.spotify.com/show/1WCbrtlntQp4RJMCke69vQ"><b>Spotify</b></a></h5>
+    </div>
+    <div class="foto2">
+        foto 
+    </div>
+</div>
+<div class="container3">
+    <div class="foto3">
+        foto 
+    </div>
+    <div class="caixa3">
+        <h2>Gender Calling</h2>
+        <h5>Aqui, as mulheres e as minorias estão no palco principal. Aqui, têm-se conversas sobre problemas reais do dia-a-dia,
+             sem filtros. Igualdade de gênero, saúde mental, sexual e reprodutiva, carreira, poder e discriminação são temas de 
+             revelações feitas por quem tem algo a dizer. Gender Calling é uma plataforma multimédia de jornalismo,
+             fundada por Catarina Marques Rodrigues, e disponível em www.gendercalling.com <br><br>
+             Acessar: &nbsp
+        <a href="https://open.spotify.com/show/3bSYkzxru2e3LjCWVQ5rLK"><b>Spotify</b></a></h5>
+    </div>
+</div>
+<div class="container4">
+    <div class="caixa4">
+        <h2>Do Género</h2>
+        <h5>Conversas sobre igualdade no dia-a-dia, por Aline Flor. <br><br>
+             Acessar: &nbsp
+        <a href="https://open.spotify.com/show/6Uv9aGjDLaACtTGQY04uT4"><b>Spotify</b></a></h5>
+    </div>
+    <div class="foto4">
+    </div>
+</div>
+
+<script>
+    document.querySelector('.ball').addEventListener('click', (e)=>{
+        e.target.classList.toggle('ball-move');
+        document.body.classList.toggle('dark');
+    })
+</script>
+
+
+<style>
+*{
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    transform: background 1s;
+    background-image: url(imagens/fun1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.h1{
+    margin-top: 100px;
+    margin: 25px;
+    font-size: large;
+    text-align: center;
+}
+
+h5{
+    font-size: medium;
+}
+
+a{
+    color: #ffffff;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+ul {
+    position: fixed;
+list-style-type: none;
+margin: 0;
+padding: 5px;
+overflow: hidden;
+background-color: #9775a8 ;
+width: 100%;
+}
+
+li {
+float: left;
+color: white;
+text-align: center;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 12px 14px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #7c628a;
+color: #fff;
+}
+
+.botao{
+margin: 15px;
+position: relative;
+width: 50px;
+height: 20px;
+border-radius: 25px;
+box-shadow: 0 0 2.5px 0 #473f6e ;
+cursor: pointer;
+background-color: #a36887 ;
+border: 34px;
+}
+.ball{
+position: absolute;
+top: 0;
+left: 0;
+width: 20px;
+height: 100%;
+border-radius: 50%;
+background-color: #fb815f;
+transition: left 1s;
+border: 2px #8832da;
+}
+.ball-move{
+left: calc(100% - 20px);
+}
+.dark{
+background-image: url(imagens/fun2.jpeg);
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+color: #fff;
+}
+
+.margem{
+padding: 32px;
+}
+
+.container1{
+    position:static;
+    width: 90%;
+    padding: 40px;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #b9687f2c 15%, #b9687f42 30%, #b9687f9c 90%);
+   margin: 20px;
+   float: left;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    
+}
+.caixa1{
+    position: static;
+    width: 100%;
+    padding: 110px;
+    height: 70px;
+    float: right;
+    background-color: transparent;
+    margin: 1px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.foto1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+    background-image: url(imagens/cast1.jpg);
+    position:static;
+    width: 20%;
+    padding: 110px;
+    height: 70px;
+    float: left;
+    margin: 1px;
+    border-radius: 20px;
+}
+
+.container2{
+    position:static;
+    width: 90%;
+    padding: 40px;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #b9687f2c 15%, #b9687f42 30%, #b9687f9c 90%);
+   margin: 20px;
+   float: right;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    
+}
+.caixa2{
+    position: static;
+    width: 80%;
+    padding: 110px;
+    height: 70px;
+    float: right;
+    background-color: transparent;
+    margin: 1px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.foto2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+    background-image: url(imagens/cast2.jpg);
+    position:static;
+    width: 20%;
+    padding: 110px;
+    height: 70px;
+    float: left;
+    margin: 1px;
+    border-radius: 20px;
+}
+
+.container3{
+    position:static;
+    width: 90%;
+    padding: 40px;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #b9687f2c 15%, #b9687f42 30%, #b9687f9c 90%);
+   margin: 20px;
+   float: left;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    
+}
+.caixa3{
+    position: static;
+    width: 80%;
+    padding: 110px;
+    height: 70px;
+    float: right;
+    background-color: transparent;
+    margin: 1px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.foto3{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+    background-image: url(imagens/cast3.jpg);
+    position:static;
+    width: 20%;
+    padding: 110px;
+    height: 70px;
+    float: left;
+    margin: 1px;
+    border-radius: 20px;
+}
+
+.container4{
+    position:static;
+    width: 90%;
+    padding: 40px;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #b9687f2c 15%, #b9687f42 30%, #b9687f9c 90%);
+   margin: 20px;
+   margin-bottom: 50px;
+   float: right;
+    border-radius: 20px;
+    
+}
+.caixa4{
+    position: static;
+    width: 80%;
+    padding: 110px;
+    height: 70px;
+    float: right;
+    background-color: transparent;
+    margin: 1px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.foto4{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+    background-image: url(imagens/cast4.jpg);
+    position:static;
+    width: 20%;
+    padding: 110px;
+    height: 70px;
+    float: left;
+    margin: 1px;
+    border-radius: 20px;
+}
+</style>
+</body>
+</html>
